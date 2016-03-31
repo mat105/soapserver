@@ -15,7 +15,7 @@ public interface InterfazJugador {
 	
 	@WebMethod void eliminarJugador(Jugador juga);
 	
-	@WebMethod Jugador[] listarJugadores();
+	@WebMethod Object[] listarJugadores();
 	
-	@WebMethod Jugador[] listarJugadoresOjeados();
+	@WebMethod Object[] listarJugadoresOjeados();
 }

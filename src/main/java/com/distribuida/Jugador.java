@@ -15,6 +15,56 @@ public class Jugador {
 	
 	
 	
+	
+	
+	public java.util.Date getFecha_ojeo() {
+		return fecha_ojeo;
+	}
+
+	public void setFecha_ojeo(java.util.Date fecha_ojeo) {
+		this.fecha_ojeo = fecha_ojeo;
+	}
+
+	public String getNombre() {
+		return nombre;
+	}
+
+	public void setNombre(String nombre) {
+		this.nombre = nombre;
+	}
+
+	public String getClub() {
+		return club;
+	}
+
+	public void setClub(String club) {
+		this.club = club;
+	}
+
+	public float getCosto() {
+		return costo;
+	}
+
+	public void setCosto(float costo) {
+		this.costo = costo;
+	}
+
+	public String getPosicion() {
+		return posicion;
+	}
+
+	public void setPosicion(String posicion) {
+		this.posicion = posicion;
+	}
+
+	public String getComentarios() {
+		return comentarios;
+	}
+
+	public void setComentarios(String comentarios) {
+		this.comentarios = comentarios;
+	}
+
 	public Jugador() {
 		super();
 		

@@ -33,12 +33,12 @@ public class ImplementacionJugador implements InterfazJugador {
 	}
 
 	//@Override
-	public Jugador[] listarJugadores() {
+	public Object[] listarJugadores() {
 		// TODO Auto-generated method stub
-		return (Jugador[])lista.toArray();
+		return lista.toArray();
 	}
 	
-	public Jugador[] listarJugadoresOjeados() {
+	public Object[] listarJugadoresOjeados() {
 		java.util.ArrayList<Jugador> jugas = new java.util.ArrayList<Jugador>();
 		
 		for(Jugador cosa : lista){
@@ -47,7 +47,7 @@ public class ImplementacionJugador implements InterfazJugador {
 			}
 		}
 		
-		return (Jugador[])jugas.toArray();
+		return jugas.toArray();
 	}
 
 	public ImplementacionJugador() {
