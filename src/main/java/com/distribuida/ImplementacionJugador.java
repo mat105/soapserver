@@ -7,7 +7,7 @@ import javax.jws.WebMethod;
 
 import javax.jws.WebService;
 
-@WebService(endpointInterface = "paquetesoap.InterfazJugador")
+@WebService(endpointInterface = "com.distribuida.InterfazJugador")
 public class ImplementacionJugador implements InterfazJugador {
 	private java.util.ArrayList<Jugador> lista = new java.util.ArrayList<Jugador>();
 	
