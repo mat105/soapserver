@@ -17,6 +17,10 @@ public class Jugador {
 	
 	public Jugador() {
 		super();
+		
+		this.fecha_ojeo = new java.util.Date();
+		this.ojeos = new ArrayList<Ojeo>();
+		
 	}
 
 	private class Ojeo {
@@ -71,15 +75,16 @@ public class Jugador {
 
 	public Jugador(String nombre, String club, float costo, String posicion,
 			String comentarios) {
-		super();
+		//super();
+		this();
 		
-		this.fecha_ojeo = new java.util.Date();
+		//this.fecha_ojeo = new java.util.Date();
 		this.nombre = nombre;
 		this.club = club;
 		this.costo = costo;
 		this.posicion = posicion;
 		this.comentarios = comentarios;
-		this.ojeos = new ArrayList<Ojeo>();
+
 	}
 	
 	

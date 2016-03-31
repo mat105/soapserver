@@ -1,6 +1,5 @@
 package paquetesoap;
-import java.util.ArrayList;
-import java.util.List;
+//import java.util.ArrayList;
 
 //import paquetesoap.InterfazJugador;
 
@@ -21,7 +20,10 @@ public class ImplementacionJugador implements InterfazJugador {
 	@Override
 	public void agregarOjeo(Jugador juga, String comentario) {
 		// TODO Auto-generated method stub
-		juga.ojear(comentario);
+		int id = lista.indexOf(juga);
+		
+		if(id >= 0)
+			lista.get(id).ojear(comentario);
 	}
 
 	@Override
@@ -31,9 +33,21 @@ public class ImplementacionJugador implements InterfazJugador {
 	}
 
 	@Override
-	public ArrayList<Jugador> listarJugadores() {
+	public Jugador[] listarJugadores() {
 		// TODO Auto-generated method stub
-		return lista;
+		return (Jugador[])lista.toArray();
+	}
+	
+	public Jugador[] listarJugadoresOjeados() {
+		java.util.ArrayList<Jugador> jugas = new java.util.ArrayList<Jugador>();
+		
+		for(Jugador cosa : lista){
+			if(cosa.estaOjeado()){
+				jugas.add(cosa);
+			}
+		}
+		
+		return (Jugador[])jugas.toArray();
 	}
 
 	public ImplementacionJugador() {

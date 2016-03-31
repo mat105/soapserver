@@ -1,7 +1,5 @@
 package paquetesoap;
 
-import java.util.ArrayList;
-
 import javax.jws.WebMethod;
 import javax.jws.WebService;
 import javax.jws.soap.SOAPBinding;
@@ -17,5 +15,7 @@ public interface InterfazJugador {
 	
 	@WebMethod void eliminarJugador(Jugador juga);
 	
-	@WebMethod ArrayList<Jugador> listarJugadores();
+	@WebMethod Jugador[] listarJugadores();
+	
+	@WebMethod Jugador[] listarJugadoresOjeados();
 }
